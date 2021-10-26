@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- bootstrap  -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+        />
+
+        <!-- main css  -->
+        <link rel="stylesheet" href="./css/css.main" />
+    </head>
+
+    <body>
+        <div  class="container my-5">
+            <h3>Bài tập mảng</h3>
+            <form class="row">
+                <div class="form-group col-4">
+                    <label for="nhapSo"> Nhập số </label>
+                    <input type="number" class="form-control" id="nhapSo" />
+                </div>
+            </form>
+            <button id="btnAdd" type="button" class="btn btn-primary">
+                Thêm số
+            </button>
+        </div>
+
+        <!-- bai 1: tổng số dương -->
+        <div class="container my-5">
+            <h4>Bài 1: Tổng số dương</h4>
+            <button id="btnTongDuong" type="button" class="btn btn-primary">
+                Tổng Dương
+            </button>
+            <p id="txtTongDuong" class="alert alert-success my-2"></p>
+        </div>
+
+        <!-- bai 2: đếm số dương  -->
+        <div class="container my-5">
+            <h4>Bài 2: Đếm số dương</h4>
+            <button id="btnCountDuong" type="button" class="btn btn-primary">
+                Tổng Dương
+            </button>
+            <p id="txtCountDuong" class="alert alert-success my-2"></p>
+        </div>
+
+        <!-- bai 3: Tim Min  -->
+        <div class="container my-5">
+            <h4>Bài 3: Tìm Min</h4>
+            <button id="btntimMin" type="button" class="btn btn-primary">
+                Tìm Min
+            </button>
+            <p id="txttimMin" class="alert alert-success my-2"></p>
+        </div>
+
+        <!-- bai 4: Tim Max  -->
+        <div class="container my-5">
+            <h4>Bài 4: Tìm Max</h4>
+            <button id="btntimMax" type="button" class="btn btn-primary">
+                Tìm Max
+            </button>
+            <p id="txttimMax" class="alert alert-success my-2"></p>
+        </div>
+
+        <!-- bai 5: Số chẵn cuối cùng trong mảng  -->
+        <div class="container my-5">
+            <h4>Bài 5: Số chẵn cuối cùng trong mảng</h4>
+            <button id="btnChanCuoi" type="button" class="btn btn-primary">
+                Tìm số chẵn cuối cùng
+            </button>
+            <p id="txtChanCuoi" class="alert alert-success my-2"></p>
+        </div>
+
+        <!-- bai 6: Đổi chỗ vị trí  -->
+        <div class="container my-5">
+            <h4>Bài 6: Đổi chỗ vị trí</h4>
+            <form class="row">
+                <div class="form-group col-4">
+                    <label for="soThuNhat"> Nhập số vị trí 1</label>
+                    <input type="number" class="form-control" id="soThuNhat" />
+                </div>
+                <div class="form-group col-4">
+                    <label for="soThuHai"> Nhập số vị trí 2 </label>
+                    <input type="number" class="form-control" id="soThuHai" />
+                </div>
+            </form>
+            <button id="btnDoiCho" type="button" class="btn btn-primary">
+                Đổi chỗ
+            </button>
+            <p id="txtDoiCho" class="alert alert-success my-2"></p>
+        </div>
+
+        <!-- bai7: sap xep tang dan -->
+        <div class="container my-5">
+            <h4>Bài 7: Sắp xếp tăng dần</h4>
+            <button id="btnTangDan" type="button" class="btn btn-primary">
+                Sắp xếp tăng dần
+            </button>
+            <p id="txtTangDan" class="alert alert-success my-2"></p>
+        </div>
+
+        <!-- bai8: Số nguyên tố dầu tiên -->
+        <div class="container my-5">
+            <h4>Bài 8: Số nguyên tố dầu tiên</h4>
+            <button id="btnNguyenTo1" type="button" class="btn btn-primary">
+                Tìm số nguyên tố dầu tiên
+            </button>
+            <p id="txtNguyenTo1" class="alert alert-success my-2"></p>
+        </div>
+
+        <!-- bai9: Nhập thêm mảng, đếm số nguyên-->
+        <div class="container my-5">
+            <h4>Bài 9: Nhập thêm mảng, đếm số nguyên</h4>
+            <form class="row">
+                <div class="form-group col-4">
+                    <label for="nhapThem"> Nhập số </label>
+                    <input type="number" class="form-control" id="nhapThem" />
+                </div>
+            </form>
+            <button id="btnThem" type="button" class="btn btn-primary">
+                Thêm số
+            </button>
+            <button id="btnDemNguyen" type="button" class="btn btn-primary">
+                Đếm số nguyên
+            </button>
+            <p id="txtDemNguyen" class="alert alert-success my-2"></p>
+        </div>
+
+        <!-- bai10: So sánh số lượng số âm, số dương -->
+        <div class="container my-5">
+            <h4>Bài 10: So sánh số lượng số âm, số dương</h4>
+            <button id="btnSoSanh" type="button" class="btn btn-primary">
+                So sánh
+            </button>
+            <p id="txtSoSanh" class="alert alert-success my-2"></p>
+        </div>
+
+        <!-- bootstrap  -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- main JS  -->
+        <script src="./Js/main.js"></script>
+    </body>
+</html>
